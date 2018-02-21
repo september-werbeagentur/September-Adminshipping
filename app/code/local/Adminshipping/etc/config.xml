@@ -6,7 +6,6 @@
             <version>1.0.0</version>
         </September_Adminshipping>
     </modules>
-    <!-- Konfiguration unseres Modul-Verhaltens -->
     <global>
         <models>
             <adminshipping>
@@ -18,30 +17,26 @@
                 </rewrite>
             </shipping>
         </models>
-
         <blocks>
             <adminshipping>
                 <class>September_Adminshipping_Block</class>
             </adminshipping>
         </blocks>
-
-        <!-- für Hilfsfunktionen -->
         <helpers>
             <adminshipping>
                 <class>September_Adminshipping_Helper</class>
             </adminshipping>
         </helpers>
     </global>
-
     <default>
         <carriers>
-            <september_adminshipping> <!-- Neue Versandart hinzufügen -->
-                <active>1</active> <!-- aktiv 0 - nein / 1 - ja -->
-                <sallowspecific>0</sallowspecific> <!-- erlaubte Länder auswählbar? -->
-                <model>adminshipping/carrier_adminshipping</model> <!-- dort lebt die Logik unseres Moduls -->
-                <name>Selbstabholung</name> <!-- Name, wird so im Adminbereich angezeigt -->
-                <title>Selbstabholung</title> <!-- Titel, zur Ausgabe im Frontend -->
-                <specificerrmsg>This method is currently not activated</specificerrmsg> <!-- Fehlernachricht, falls Versandmethode nicht aktiviert ist -->
+            <september_adminshipping>
+                <active>1</active>
+                <sallowspecific>0</sallowspecific>
+                <model>adminshipping/carrier_adminshipping</model>
+                <name>Selbstabholung</name>
+                <title>Selbstabholung</title>
+                <specificerrmsg>This method is currently not activated</specificerrmsg>
             </september_adminshipping>
         </carriers>
     </default>
