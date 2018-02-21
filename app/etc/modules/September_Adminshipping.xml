@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <September_Adminshipping>
+            <active>true</active>
+            <codePool>local</codePool>
+        </September_Adminshipping>
+    </modules>
+</config>
