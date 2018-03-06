@@ -1,7 +1,6 @@
 <?php
 
-class September_Adminshipping_Model_Carrier_Adminshipping
-    extends Mage_Shipping_Model_Carrier_Abstract
+class September_Adminshipping_Model_Carrier_Adminshipping extends Mage_Shipping_Model_Carrier_Abstract
 {
     protected $_code = 'september_adminshipping';
 
