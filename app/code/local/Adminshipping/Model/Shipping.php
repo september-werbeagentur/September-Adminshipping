@@ -24,7 +24,7 @@ class September_Adminshipping_Model_Shipping extends Mage_Shipping_Model_Shippin
      */
     protected function _checkCarrierAvailability($carrierCode, $request = null)
     {
-        if($carrierCode == 'september_adminshipping' && !$this->isAdmin()){
+        if ($carrierCode == 'september_adminshipping' && !$this->isAdmin()) {
             return false;
         }
         return true;
@@ -35,8 +35,7 @@ class September_Adminshipping_Model_Shipping extends Mage_Shipping_Model_Shippin
      */
     protected function isAdmin()
     {
-        if(Mage::app()->getStore()->isAdmin() || Mage::getDesign()->getArea() == 'adminhtml')
-        {
+        if (Mage::app()->getStore()->isAdmin() || Mage::getDesign()->getArea() == 'adminhtml') {
             return true;
         }
         return false;
