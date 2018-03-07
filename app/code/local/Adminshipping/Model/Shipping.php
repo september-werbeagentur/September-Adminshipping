@@ -20,7 +20,7 @@ class September_Adminshipping_Model_Shipping extends Mage_Shipping_Model_Shippin
     /**
      * @param $carrierCode
      * @param null $request
-     * @return bool true if method is awailable
+     * @return bool true if method is available
      */
     protected function _checkCarrierAvailability($carrierCode, $request = null)
     {
